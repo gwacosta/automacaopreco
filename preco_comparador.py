@@ -10,7 +10,7 @@ logging.basicConfig(filename="automation.log", level=logging.INFO, format="%(asc
 
 # Função para configurar o driver
 def configurar_driver():
-    driver = webdriver.Firefox()
+    driver = webdriver.Edge()
     driver.maximize_window()
     return driver
 

@@ -6,7 +6,6 @@ Este projeto utiliza Python e Selenium para buscar e comparar preços de um prod
 ## Requisitos
 - **Python** 3.7 ou superior
 - **Selenium** (para automação)
-- **GeckoDriver** (para Firefox) ou **ChromeDriver** (para Chrome)
 
 ## Configuração do Ambiente
 
@@ -16,10 +15,10 @@ Instale as dependências usando o comando:
 pip install -r requirements.txt
 ```
 
-### 3. Alterar entre Firefox e Chrome
+### 3. Alterar entre Firefox, Chrome ou Edge
 Para trocar de Firefox para Chrome, faça as seguintes alterações no código:
 
-1. Substitua `webdriver.Firefox()` por `webdriver.Chrome()` na função de configuração do driver.
+1. Substitua `webdriver.Firefox()` por `webdriver.Chrome()` ou por `webdriver.Edge()` na função de configuração do driver.
    ```python
    driver = webdriver.Chrome()
    ```
